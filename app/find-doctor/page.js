@@ -1,15 +1,15 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
-import API from '@/utilities/api';
+import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 import { AiFillThunderbolt } from "react-icons/ai";
+import { FaBrain } from 'react-icons/fa6';
+import { GiKidneys, GiMedicines, GiMicroscope } from 'react-icons/gi';
+import { MdBabyChangingStation, MdBloodtype } from 'react-icons/md';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import Link from 'next/link';
-import { FaBrain, FaHeartPulse, FaNutritionix } from 'react-icons/fa6';
-import { GiKidneys, GiLeg, GiMedicines, GiMicroscope } from 'react-icons/gi';
-import { MdBabyChangingStation, MdBloodtype } from 'react-icons/md';
-import Image from 'next/image';
+import API from '../../utilities/api';
 
 export default function FindDoctor() {
     const [specialty, setSpecialty] = useState('');

@@ -1,10 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
-import API from '@/utilities/api';
-import BreadCrumb from '@/components/BreadCrumb';
 import Image from 'next/image';
+import { useParams, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { TiTick } from "react-icons/ti";
+import BreadCrumb from '../../../components/BreadCrumb';
+import API from '../../../utilities/api';
 
 export default function Profile() {
     const params = useParams();
